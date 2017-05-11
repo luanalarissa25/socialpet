@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Catioro </title>
+	
+		<script type="text/javascript" src="javascripts/jquery-3.1.1.min.js"> </script>
+		<script type="text/javascript" src="javascripts/jquery.cycle.all.js"> </script>﻿
+		
+		<!-- Inicio da função do slide Slide -->
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$('.Slides ul').cycle({
+				fx: 'fade',
+				speed: 1000,
+				timeout: 3000
+			});
+		});
+		</script>
+		
+		
+		<style type= "text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		
+		.Slides {
+		
+				margin-left: 180px;
+		}
+		
+		.Slides {
+		
+				list-style-type: none;
+		}
+		
+		.login {
+		
+				margin-left: 1000px;
+		}
+		
+		</style>
+		
+		<!-- fim da função do slide -->
+		
+		<!-- funcao logar-->
+		<script> 
+			function logar(){ 
+			var user=prompt('Qual e mesmo o seu nome?','') 
+			document.write("Ola "+user+" seja bem vindo ao meu site") 
+			} 
+		</script>
+		<!--Final da funcao logar-->
+		
+</head>
+
+<body>
+
+	<div class = "login">
+	
+	
+	 E-mail: <input type="text" id="text" value="Username"/> <br> 
+	 Senha : <input type="password" value="" /><br>
+	 <input type="button" value="Login" onclick="logar()" /> 
+	 <input type="submit" value="Cadastrar" onclick="location. href= 'cadastro.html' ">
+	 <br>
+	 <a href = "Cadastro.html"> O seu cachorro comeu a sua senha? Recupere ela aqui !</a>
+	
+	</div>
+	 
+    <img src="logo.png" width="500" height="300"/> 
+
+	<div class = "Slides">
+			
+		<ul>
+		<li> <img src = 'Slide 1.jpg' alt = "Primeira imagem" width="1000" height ="340" border = "5"> </li>
+		<li> <img src = 'Slide 2.jpg' alt = "Segunda imagem" width="1000" height ="340" border = "5"> </li>
+		<li> <img src = 'Slide 3.jpg' alt = "Terceira imagem" width="1000" height ="340" border = "5"> </li>
+		<li> <img src = 'Slide 4.jpg' alt = "Quarta imagem" width="1000" height ="340" border = "5"> </li>
+		</ul>
+		
+	</div>
+	
+	
+	<!--Inicio do código Cursor do mause-->
+	<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat909.cur), progress !important;}</style>
+	<a href="http://www.cursors-4u.com/cursor/2011/04/06/puppy-13.html" target="_blank" title="Puppy 13">
+	<img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Puppy 13" style="position:absolute; top: 0px; right: 0px;" /></a>
+	<!--Fim do código Cursor do mause-->
+	
+			<!--Inicio musica play-->
+				
+				<audio autoplay>
+				<source src="Teste.ogg" type="audio/ogg">
+				<source src="Teste.mp3" type="audio/mpeg">
+					</audio>
+					
+				<!--Fim-->
+
+	
+</table>
+	
+</body>
+
+</html>
